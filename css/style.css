@@ -1,0 +1,38 @@
+div{
+    text-align: center;
+}
+#img{
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+img{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 150px;
+    height: 150px;
+	cursor:pointer;
+}
+img:hover {
+    -webkit-animation:blinkingbig 1s ease infinite;
+    -webkit-filter:brightness(1.15);
+}
+@-webkit-keyframes blinkingbig{
+	0%,100%{
+		-webkit-filter:drop-shadow(0 0 3px rgba(0, 0, 0, .78))
+		}
+	50%{
+		-webkit-filter:drop-shadow(0 0 10px rgba(0, 0, 0, .78))
+		}
+}
+img:active{
+    -webkit-transform:scale(.95);
+}
+
+body{
+    background-size:cover;
+}
+#header{
+    font-size: 40px;
+    font-weight: bold;
+}
